@@ -18,7 +18,7 @@ this section briefly explains the structure of the package and explains customiz
   
 
 
-# Quick Start
+## Quick Start
 
 ## Requirements
 - `sudo apt-get install qt5-default`
@@ -31,23 +31,26 @@ this section briefly explains the structure of the package and explains customiz
 ## Controller setup 
 we can use a moveit C++ robot controller this guide shows how to setup any robot controller to work with robot fault injector pakcage
 
+- remap `joint_states` topic to `joint_states_fake`
+
+![Remap the topic](src/robot_fi_tool/images/remap_topic.png)
 
 - Create publisher and subsriber use the same topic as shown in the below figure.
 
-[Required publisher and subscriber](src/robot_fi_tool/images/pub_sub.png)
+![Required publisher and subscriber](src/robot_fi_tool/images/pub_sub.png)
 
 
 - publish iterations: since the robot perform multiple iterations of a similar movement
 
-[Coordinates](src/robot_fi_tool/images/coordinates.png)
+![Coordinates](src/robot_fi_tool/images/coordinates.png)
 
 - publish status message and state of the robot state here means the pose of the robot
 
-[message_publisher](src/robot_fi_tool/images/Screenshot%20from%202023-04-23%2023-28-24.png)
+![message_publisher](src/robot_fi_tool/images/Screenshot%20from%202023-04-23%2023-28-24.png)
 
 - sleep for 5 seconds befor starting the moveit call
 
-[sleep](src/robot_fi_tool/images/sleep.png)
+![sleep](src/robot_fi_tool/images/sleep.png)
 
 
 
