@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam file="$(find robot_fi_tool)/config/noise.yaml" />
+    <rosparam file="$(find robot_fi_tool)/config/offset.yaml" />
+    <rosparam file="$(find robot_fi_tool)/config/package_drop.yaml" />
+    <rosparam file="$(find robot_fi_tool)/config/stuck_at.yaml" />
+    <rosparam file="$(find robot_fi_tool)/config/default_fault.yaml" />
+    <node name="FIB" pkg="robot_fi_tool" type="robot_fi_module.py" output="screen"/>
+    <node name="listener" pkg="robot_fi_tool" type="goal_listener.py" output="screen"/>
+    <node name="random_fault_gen" pkg="robot_fi_tool" type="real_time_random_error_gen.py" output="screen"/>
+    <node name="plan_observer" pkg="robot_fi_tool" type="planning_observer.py" output="screen"/>
+    <node name="execution_observer" pkg="robot_fi_tool" type="execution_observer.py" output="screen"/>
+    <include file="$(find person_sim)/launch/init_standing_person.launch" />
+</launch>

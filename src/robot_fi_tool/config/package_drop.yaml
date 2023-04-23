@@ -1,0 +1,6 @@
+---
+fault_name: package_drop
+min_drop_rate: 1
+max_drop_rate: 3
+default_drop_rate: 0
+# drop rate is refers to number of packets to drop in given drop rate

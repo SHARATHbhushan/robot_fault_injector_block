@@ -1,0 +1,3 @@
+---
+fault_name: stuck_at
+# this fault collects the latest value of sensor and publishes it generating a stuck at scenario

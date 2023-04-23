@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/acefly/pick_place_test/devel/lib/python3/dist-packages",
+        "/home/acefly/robot_fib/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/acefly/pick_place_test/devel/lib/python3/dist-packages",
+        "/home/acefly/robot_fib/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

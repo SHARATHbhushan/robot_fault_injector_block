@@ -1,0 +1,11 @@
+int32 fault
+int32 joint
+int32 pose
+int32 offset
+int32 time
+int32 time_label
+int32 drop_rate
+float32 mean
+float32 sd
+int32 fault_effect
+float32 time_offset
